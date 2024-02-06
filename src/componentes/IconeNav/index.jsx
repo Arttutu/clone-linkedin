@@ -5,7 +5,7 @@ import { FaBell } from "react-icons/fa6";
 import eu from "./logo-avatar2.jpeg";
 export default function IconeNav() {
   return (
-    <div className="flex items-center gap-6">
+    <div className="flex items-center  gap-4 sm:gap-6">
       <div className="flex flex-col items-center">
         <IoHomeSharp className="text-2xl text-gray-600 cursor-pointer hover:text-black transition-all" />
         <span className="text-gray-600 text-xs hidden md:block">Inicio</span>

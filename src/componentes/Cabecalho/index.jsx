@@ -6,28 +6,27 @@ import IconeNav from "../IconeNav";
 
 export default function Cabecalho() {
   return (
-    <nav className="container mx-auto flex items-center justify-around p-2">
-      <div className="flex items-center gap-2">
+    <nav className=" justify-between container mx-auto flex items-center sm:justify-around p-2">
+      <div className="flex  justify-center items-center gap-1 sm:gap-2">
         <FaLinkedin className="text-4xl text-blue-600" />
-        <label className="w-full m-0 p-0">
-          <FaMagnifyingGlass className=" relative text-base  left-3 top-6 text-gray-400" />
-          <input
-            id="search"
-            className="w-64 h-8 pl-10 bg-slate-200 rounded-sm"
-            placeholder="Pesquisar"
-          />
-        </label>
+        <input
+          id="search"
+          className=" hidden md:block sm:w-48 sm:h-8  focus:outline-none pl-10 bg-slate-200 rounded-sm"
+          placeholder="Pesquisar"
+        />
+        <FaMagnifyingGlass className=" text-2xl text-gray-600  sm:hidden" />
       </div>
       <IconeNav />
-      <div className="flex items-center gap-8">
+      <div className="flex items-center  gap-1 sm:gap-8">
+        <div className="bg-gray-600 w-1 h-18"></div>
         <div className="flex flex-col items-center">
           <CgLayoutGridSmall className="text-4xl text-gray-600 cursor-pointer hover:text-black transition-all" />
           <span className="text-gray-600 text-xs  hidden md:block">
             Para negócios
           </span>
         </div>
-        <h2 className="text-yellow-700 underline text-sm  w-36">
-          Reative Premium: 50% de desconto
+        <h2 className="text-yellow-700 underline text-sm  hidden sm:block w-36">
+          Reative seu Premium: 50% de desconto
         </h2>
       </div>
     </nav>

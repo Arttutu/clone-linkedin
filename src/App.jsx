@@ -1,5 +1,6 @@
 import React from "react";
 import Cabecalho from "./componentes/Cabecalho";
+import Usuario from "./componentes/Usuario";
 
 export default function App() {
   return (
@@ -7,7 +8,11 @@ export default function App() {
       <header className="bg-white  h-18 shadow-sm">
         <Cabecalho />
       </header>
-      <main></main>
+      <main className="flex justify-around">
+        <Usuario />
+        <div>Principal</div>
+        <div>Notícias</div>
+      </main>
     </>
   );
 }
