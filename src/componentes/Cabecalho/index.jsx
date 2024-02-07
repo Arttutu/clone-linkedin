@@ -6,12 +6,12 @@ import IconeNav from "../IconeNav";
 
 export default function Cabecalho() {
   return (
-    <nav className=" justify-between container mx-auto flex items-center sm:justify-around p-2">
-      <div className="flex  justify-center items-center gap-1 sm:gap-2">
+    <nav className="w-full h-full justify-between  max-w-6xl mx-auto flex items-center sm:items-center sm:justify-between p-2">
+      <div className="flex  justify-center items-center gap-8 sm:gap-2">
         <FaLinkedin className="text-4xl text-blue-600" />
         <input
           id="search"
-          className=" hidden md:block sm:w-48 sm:h-8  focus:outline-none pl-10 bg-slate-200 rounded-sm"
+          className=" hidden md:block sm:w-48 sm:h-8  focus:outline-none pl-10 bg-slate-200 rounded-sm "
           placeholder="Pesquisar"
         />
         <FaMagnifyingGlass className=" text-2xl text-gray-600  sm:hidden" />

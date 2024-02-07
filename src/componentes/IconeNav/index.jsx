@@ -2,7 +2,7 @@ import React from "react";
 import { IoHomeSharp, IoPeople, IoBagRemoveSharp } from "react-icons/io5";
 import { AiFillMessage } from "react-icons/ai";
 import { FaBell } from "react-icons/fa6";
-import eu from "./logo-avatar2.jpeg";
+import eu from "./logo_avatar.jpeg";
 export default function IconeNav() {
   return (
     <div className="flex items-center  gap-4 sm:gap-6">
