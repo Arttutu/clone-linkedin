@@ -11,7 +11,7 @@ export default function Cabecalho() {
         <FaLinkedin className="text-4xl text-blue-600" />
         <input
           id="search"
-          className=" hidden md:block sm:w-48 sm:h-8  focus:outline-none pl-10 bg-slate-200 rounded-sm "
+          className=" hidden md:block sm:w-60 sm:h-8  focus:outline-none pl-10 bg-slate-100 rounded-md placeholder:text-black "
           placeholder="Pesquisar"
         />
         <FaMagnifyingGlass className=" text-2xl text-gray-600  sm:hidden" />
@@ -25,8 +25,8 @@ export default function Cabecalho() {
             Para negócios
           </span>
         </div>
-        <h2 className="text-yellow-700 underline text-sm  hidden sm:block w-36">
-          Reative seu Premium: 50% de desconto
+        <h2 className="text-yellow-700 text-center underline text-sm  hidden sm:block w-36">
+          Reative Premium: 50% de desconto
         </h2>
       </div>
     </nav>
