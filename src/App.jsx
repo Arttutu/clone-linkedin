@@ -8,7 +8,7 @@ export default function App() {
       <header className="bg-white  h-14 shadow-sm">
         <Cabecalho />
       </header>
-      <main className="flex justify-between  max-w-6xl mx-auto ">
+      <main className="flex flex-col justify-between  px-o max-w-6xl mx-auto sm:px-4  sm:flex-row">
         <Usuario />
         <div>Principal</div>
         <div>Notícias</div>
