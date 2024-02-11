@@ -4,6 +4,8 @@ import { IoIosPeople, IoIosArrowDown } from "react-icons/io";
 import { FiPlus } from "react-icons/fi";
 import foto from "./logo_avatar.jpeg";
 import banner from "./banner.jpg";
+import * as Dialog from "@radix-ui/react-dialog";
+
 export default function Usuario() {
   const [recentes, SetRecentes] = useState(false);
   const [grupos, SetGrupos] = useState(false);
@@ -35,8 +37,8 @@ export default function Usuario() {
   }, []);
   return (
     <>
-      <aside className="flex  flex-col w-full gap-2 sm:w-56">
-        <div className="bg-white  sm:rounded-lg sm:mt-6">
+      <aside className="flex  flex-col w-full sm:w-56">
+        <div className="bg-white  sm:rounded-t-lg sm:mt-6">
           <div className="relative">
             <div className="">
               <img
@@ -58,8 +60,10 @@ export default function Usuario() {
               Styled-Componetes | Figma | Github
             </p>
           </div>
-          {exibir_mais ? (
-            <>
+        </div>
+        {exibir_mais ? (
+          <>
+            <div className=" bg-white sm:rounded-b-lg">
               <div className=" border-t flex gap-2  p-2 flex-col  ">
                 <div className="flex gap-4  hover:bg-gray-200 transition-all">
                   <p className="text-xs text-gray-600 hover:underline cursor-pointer ">
@@ -90,83 +94,94 @@ export default function Usuario() {
                   </p>
                 </a>
               </div>
-              <div className=" border-t flex items-center gap-2 p-3 hover:bg-gray-200 transition-all">
+              <div className=" border-t flex items-center gap-2 p-3  hover:bg-gray-200 transition-all">
                 <FaFlag className="text-xs text-gray-600" />
                 <span className="text-xs text-gray-600 font-semibold ">
                   Meus itens
                 </span>
               </div>
-              <div className="bg-white rounded-md flex flex-col gap-4 ">
-                <div className="flex flex-col gap-2   px-3 pt-3 group">
-                  <div className="flex items-center justify-between group">
-                    <h3 className="text-xs text-gray-600 font-semibold ">
-                      Recentes
-                    </h3>
-                    <IoIosArrowDown
-                      className="hidden text-xl text-gray-600  group-hover:block hover:bg-gray-200 hover:rounded-full "
-                      onClick={HandleRecentes}
-                    />
+            </div>
+            <div className="bg-white rounded-md  sm:mt-2 flex flex-col gap-4 ">
+              <div className="flex flex-col gap-2   px-3 pt-3 group">
+                <div className="flex items-center justify-between group">
+                  <h3 className="text-xs text-gray-600 font-semibold ">
+                    Recentes
+                  </h3>
+                  <IoIosArrowDown
+                    className="hidden text-xl text-gray-600  group-hover:block hover:bg-gray-200 hover:rounded-full "
+                    onClick={HandleRecentes}
+                  />
+                </div>
+                {recentes ? (
+                  <div className="flex items-center gap-2 hover:bg-gray-200 ">
+                    <IoIosPeople className="text-gray-600 " />
+                    <p className=" text-xs text-gray-600">JavaScript</p>
                   </div>
-                  {recentes ? (
+                ) : (
+                  ""
+                )}
+              </div>
+              <div className="flex flex-col px-3  gap-2 group">
+                <div className="flex items-center justify-between group">
+                  <h3 className="text-xs text-blue-600 font-semibold group-hover:underline ">
+                    Grupos
+                  </h3>
+                  <IoIosArrowDown
+                    className="hidden text-xl text-gray-600  group-hover:block hover:bg-gray-200 hover:rounded-full "
+                    onClick={HandleGrupos}
+                  />
+                </div>
+                {grupos ? (
+                  <div className="flex flex-col gap-2">
                     <div className="flex items-center gap-2 hover:bg-gray-200 ">
                       <IoIosPeople className="text-gray-600 " />
                       <p className=" text-xs text-gray-600">JavaScript</p>
                     </div>
-                  ) : (
-                    ""
-                  )}
-                </div>
-                <div className="flex flex-col px-3  gap-2 group">
-                  <div className="flex items-center justify-between group">
-                    <h3 className="text-xs text-blue-600 font-semibold group-hover:underline ">
-                      Grupos
-                    </h3>
-                    <IoIosArrowDown
-                      className="hidden text-xl text-gray-600  group-hover:block hover:bg-gray-200 hover:rounded-full "
-                      onClick={HandleGrupos}
-                    />
-                  </div>
-                  {grupos ? (
-                    <div className="flex flex-col gap-2">
-                      <div className="flex items-center gap-2 hover:bg-gray-200 ">
-                        <IoIosPeople className="text-gray-600 " />
-                        <p className=" text-xs text-gray-600">JavaScript</p>
-                      </div>
-                      <div className="flex items-center gap-2 hover:bg-gray-200 ">
-                        <p className=" text-xs text-gray-600 pl-6">
-                          Vizualizar todos
-                        </p>
-                      </div>
+                    <div className="flex items-center gap-2 hover:bg-gray-200 ">
+                      <p className=" text-xs text-gray-600 pl-6">
+                        Vizualizar todos
+                      </p>
                     </div>
-                  ) : (
-                    ""
-                  )}
-                </div>
-                <div className="flex justify-between px-3 items-center group">
-                  <h3 className="text-xs text-blue-600 font-semibold  group-hover:underline ">
-                    Eventos
+                  </div>
+                ) : (
+                  ""
+                )}
+              </div>
+              <div className="flex gap-3 justify-between px-3 items-center group">
+                <h3 className="text-xs text-blue-600 font-semibold  group-hover:underline ">
+                  Eventos
+                </h3>
+                <Dialog.Root>
+                  <Dialog.Trigger>
+                    <FiPlus className="text-gray-600 text-xl hover:bg-gray-200 cursor-pointer hover:rounded-full " />
+                  </Dialog.Trigger>
+                  <Dialog.Portal>
+                    <Dialog.Overlay className="inset-0 fixed  bg-black/50 " />
+                    <Dialog.Content className="  left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-black z-10 absolute max-w-[300px] max-h-[300px] w-full  bg-white">
+                      APRRENDENO RADIX
+                    </Dialog.Content>
+                  </Dialog.Portal>
+                </Dialog.Root>
+              </div>
+              <div>
+                <div className="border-b-2 pb-4 px-3">
+                  <h3 className="text-xs text-blue-600 font-semibold  hover:underline ">
+                    Hashtags Seguidas
                   </h3>
-                  <FiPlus className="text-gray-600 text-xl hover:bg-gray-200 hover:rounded-full " />
                 </div>
-                <div>
-                  <div className="border-b-2 pb-4 px-3">
-                    <h3 className="text-xs text-blue-600 font-semibold  hover:underline ">
-                      Hashtags Seguidas
-                    </h3>
-                  </div>
-                  <div className=" flex items-center hover:bg-gray-200  w-full h-12 ">
-                    <h3 className="text-gray-600 text-sm mx-auto font-semibold">
-                      Descubra mais
-                    </h3>
-                  </div>
+                <div className=" flex items-center hover:bg-gray-200  w-full h-12 ">
+                  <h3 className="text-gray-600 text-sm mx-auto font-semibold">
+                    Descubra mais
+                  </h3>
                 </div>
               </div>
-            </>
-          ) : null}
-        </div>
+            </div>
+          </>
+        ) : null}
+
         <button
           type="button"
-          className=" sm:hidden flex items-center justify-center gap-4 text-gray-600 text-sm"
+          className=" sm:hidden flex items-center justify-center gap-4 text-gray-600 text-sm  p-2  hover:bg-gray-200"
           onClick={HandleExibirMais}
         >
           Exibir {exibir_mais ? "menos" : "mais"}
