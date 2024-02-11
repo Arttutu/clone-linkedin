@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { FaFlag } from "react-icons/fa";
 import { IoIosPeople, IoIosArrowDown } from "react-icons/io";
-import { FiPlus } from "react-icons/fi";
+
 import foto from "./logo_avatar.jpeg";
 import banner from "./banner.jpg";
-import * as Dialog from "@radix-ui/react-dialog";
+import EventosModal from "../EventosModal";
 
 export default function Usuario() {
   const [recentes, SetRecentes] = useState(false);
@@ -151,17 +151,7 @@ export default function Usuario() {
                 <h3 className="text-xs text-blue-600 font-semibold  group-hover:underline ">
                   Eventos
                 </h3>
-                <Dialog.Root>
-                  <Dialog.Trigger>
-                    <FiPlus className="text-gray-600 text-xl hover:bg-gray-200 cursor-pointer hover:rounded-full " />
-                  </Dialog.Trigger>
-                  <Dialog.Portal>
-                    <Dialog.Overlay className="inset-0 fixed  bg-black/50 " />
-                    <Dialog.Content className="  left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-black z-10 absolute max-w-[300px] max-h-[300px] w-full  bg-white">
-                      APRRENDENO RADIX
-                    </Dialog.Content>
-                  </Dialog.Portal>
-                </Dialog.Root>
+                <EventosModal />
               </div>
               <div>
                 <div className="border-b-2 pb-4 px-3">
