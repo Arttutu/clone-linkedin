@@ -37,7 +37,7 @@ export default function Usuario() {
   }, []);
   return (
     <>
-      <aside className="flex  flex-col w-full sm:w-56">
+      <aside className="flex  flex-col w-full  md:w-56">
         <div className="bg-white  sm:rounded-t-lg sm:mt-6">
           <div className="relative">
             <div className="">

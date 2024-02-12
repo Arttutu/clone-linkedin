@@ -25,7 +25,7 @@ export default function Cabecalho() {
             Para negócios
           </span>
         </div>
-        <h2 className="text-yellow-700 text-center underline text-sm  hidden sm:block w-36">
+        <h2 className="text-yellow-700 text-center underline text-xs hidden sm:block w-36">
           Reative Premium: 50% de desconto
         </h2>
       </div>
