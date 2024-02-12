@@ -1,0 +1,129 @@
+[
+      {
+        "nome": "UTC-12:00",
+        "nome_lugar": " Linha Internacional de Data",
+        "deslocamento": -12
+      },
+      {
+        "nome": "UTC-11:00",
+        "nome_lugar": " Ilha de Midway",
+        "deslocamento": -11
+      },
+      {
+        "nome": "UTC-10:00",
+        "nome_lugar": " Havaí",
+        "deslocamento": -10
+      },
+      {
+        "nome": "UTC-09:00",
+        "nome_lugar": " Alasca",
+        "deslocamento": -9
+      },
+      {
+        "nome": "UTC-08:00",
+        "nome_lugar": " Costa do Pacífico (EUA e Canadá)",
+        "deslocamento": -8
+      },
+      {
+        "nome": "UTC-07:00",
+        "nome_lugar": " Montanha (EUA e Canadá)",
+        "deslocamento": -7
+      },
+      {
+        "nome": "UTC-06:00",
+        "nome_lugar": " Centro (EUA e Canadá), México",
+        "deslocamento": -6
+      },
+      {
+        "nome": "UTC-05:00",
+        "nome_lugar": " Leste (EUA e Canadá), Bogotá, Lima",
+        "deslocamento": -5
+      },
+      {
+        "nome": "UTC-04:00",
+        "nome_lugar": " Atlântico (Canadá), Caracas, La Paz",
+        "deslocamento": -4
+      },
+      {
+        "nome": "UTC-03:00",
+        "nome_lugar": " Brasília, Buenos Aires, Georgetown",
+        "deslocamento": -3
+      },
+      {
+        "nome": "UTC-02:00",
+        "nome_lugar": " Meia-noite (Atlântico)",
+        "deslocamento": -2
+      },
+      {
+        "nome": "UTC-01:00",
+        "nome_lugar": " Azores, Cabo Verde",
+        "deslocamento": -1
+      },
+      {
+        "nome": "UTC",
+        "nome_lugar": " Tempo Médio de Greenwich (GMT)",
+        "deslocamento": 0
+      },
+      {
+        "nome": "UTC+01:00",
+        "nome_lugar": " Amsterdã, Berlim, Paris, Roma",
+        "deslocamento": 1
+      },
+      {
+        "nome": "UTC+02:00",
+        "nome_lugar": " Atenas, Cairo, Kiev, Helsinki",
+        "deslocamento": 2
+      },
+      {
+        "nome": "UTC+03:00",
+        "nome_lugar": " Moscou, São Petersburgo, Istambul",
+        "deslocamento": 3
+      },
+      {
+        "nome": "UTC+04:00",
+        "nome_lugar": " Abu Dhabi, Dubai, Baku, Tbilisi",
+        "deslocamento": 4
+      },
+      {
+        "nome": "UTC+05:00",
+        "nome_lugar": " Islamabad, Karachi, Tashkent",
+        "deslocamento": 5
+      },
+      {
+        "nome": "UTC+06:00",
+        "nome_lugar": " Almaty, Dhaka, Colombo",
+        "deslocamento": 6
+      },
+      {
+        "nome": "UTC+07:00",
+        "nome_lugar": " Bangcoc, Hanói, Jacarta",
+        "deslocamento": 7
+      },
+      {
+        "nome": "UTC+08:00",
+        "nome_lugar": " Pequim, Hong Kong, Perth, Singapura",
+        "deslocamento": 8
+      },
+      {
+        "nome": "UTC+09:00",
+        "nome_lugar": " Seul, Tóquio, Osaka, Sapporo",
+        "deslocamento": 9
+      },
+      {
+        "nome": "UTC+10:00",
+        "nome_lugar": " Sydney, Melbourne, Brisbane",
+        "deslocamento": 10
+      },
+      {
+        "nome": "UTC+11:00",
+        "nome_lugar": " Magadan, Ilhas Salomão, Nova Caledônia",
+        "deslocamento": 11
+      },
+      {
+        "nome": "UTC+12:00",
+        "nome_lugar": " Auckland, Wellington, Fiji, Kamchatka",
+        "deslocamento": 12
+      }
+    
+    ]
+  

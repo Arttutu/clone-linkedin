@@ -6,7 +6,7 @@ import Formulario from "../Formulario";
 
 export default function EventosModal() {
   return (
-    <Dialog.Root>
+    <Dialog.Root className="outline-none">
       <Dialog.Trigger>
         <FiPlus className="text-gray-600 text-xl hover:bg-gray-200 cursor-pointer hover:rounded-full " />
       </Dialog.Trigger>

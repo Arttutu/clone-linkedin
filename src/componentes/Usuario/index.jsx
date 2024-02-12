@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaFlag } from "react-icons/fa";
+import { FaFlag, FaSquare } from "react-icons/fa";
 import { IoIosPeople, IoIosArrowDown } from "react-icons/io";
 
 import foto from "./logo_avatar.jpeg";
@@ -88,8 +88,9 @@ export default function Usuario() {
                     Acesse suas ferramentas e estatísticas exclusivas
                   </p>
                 </a>
-                <a href="">
-                  <p className="text-xs text-left font-semibold underline  text-gray-600">
+                <a href="" className="flex gap-2 items-top">
+                  <FaSquare className="text-orange-300" />
+                  <p className="text-xs text-left font-bold   text-gray-600">
                     Reative seu Premium: 50% de desconto
                   </p>
                 </a>
@@ -103,7 +104,7 @@ export default function Usuario() {
             </div>
             <div className="bg-white rounded-md  sm:mt-2 flex flex-col gap-4 ">
               <div className="flex flex-col gap-2   px-3 pt-3 group">
-                <div className="flex items-center justify-between group">
+                <div className="flex items-center gap-3 sm:justify-between group">
                   <h3 className="text-xs text-gray-600 font-semibold ">
                     Recentes
                   </h3>
@@ -122,7 +123,7 @@ export default function Usuario() {
                 )}
               </div>
               <div className="flex flex-col px-3  gap-2 group">
-                <div className="flex items-center justify-between group">
+                <div className="flex items-center  gap-3 sm:justify-between group">
                   <h3 className="text-xs text-blue-600 font-semibold group-hover:underline ">
                     Grupos
                   </h3>
@@ -147,7 +148,7 @@ export default function Usuario() {
                   ""
                 )}
               </div>
-              <div className="flex gap-3 justify-between px-3 items-center group">
+              <div className="flex gap-3  px-3 items-center group sm:justify-between">
                 <h3 className="text-xs text-blue-600 font-semibold  group-hover:underline ">
                   Eventos
                 </h3>
