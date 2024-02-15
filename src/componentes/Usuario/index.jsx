@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaFlag, FaSquare } from "react-icons/fa";
 import { IoIosPeople, IoIosArrowDown } from "react-icons/io";
-
 import foto from "./logo_avatar.jpeg";
 import banner from "./banner.jpg";
 import EventosModal from "../EventosModal";

@@ -4,10 +4,11 @@ import { FaCalendarDays } from "react-icons/fa6";
 import { GoFileMedia } from "react-icons/go";
 import { FaNewspaper } from "react-icons/fa6";
 import EventosModal from "../EventosModal";
+import { IoIosArrowDown } from "react-icons/io";
 export default function Principal() {
   return (
-    <>
-      <section className="w-full max-w-[544px] h-full bg-white sm:rounded-lg sm:mt-6 p-2">
+    <div className="flex flex-col w-full max-w-[544px] ">
+      <section className="  bg-white sm:rounded-lg sm:mt-6 p-2">
         <div className="flex items-center gap-2">
           <img
             src={logo}
@@ -43,6 +44,16 @@ export default function Principal() {
           </a>
         </div>
       </section>
-    </>
+      <div className="flex items-center gap-2 m-2">
+        <div className="w-full max-w-[350px] h-[2px] bg-gray-200"></div>
+        <div className="flex items-center gap-2 ">
+          <span className="text-xs text-gray-600"> Classificar por:</span>
+          <span className="text-xs text-gray-600 flex gap items-center font-bold">
+            Populares <IoIosArrowDown />
+          </span>
+        </div>
+      </div>
+      <section className="bg-white sm:rounded-lg  p-2"></section>
+    </div>
   );
 }
