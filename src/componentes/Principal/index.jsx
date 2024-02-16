@@ -4,18 +4,19 @@ import { FaCalendarDays } from "react-icons/fa6";
 import { GoFileMedia } from "react-icons/go";
 import { FaNewspaper } from "react-icons/fa6";
 import EventosModal from "../EventosModal";
-import { IoIosArrowDown } from "react-icons/io";
+import { IoMdArrowDropdown } from "react-icons/io";
+
 export default function Principal() {
   return (
     <div className="flex flex-col w-full max-w-[544px] ">
-      <section className="  bg-white sm:rounded-lg sm:mt-6 p-2">
+      <section className="  bg-white sm:rounded-lg sm:mt-6 p-2 shadow-sm">
         <div className="flex items-center gap-2">
           <img
             src={logo}
             className="w-[48px] h-[48px] rounded-full"
             alt="foto de perfil"
           ></img>
-          <button className="text-sm text-left text-gray-700 rounded-3xl p-[16px] border border-gray-400 w-full hover:bg-gray-200 transition-all">
+          <button className="text-sm text-left text-gray-400 font-semibold rounded-3xl p-[12px] border border-gray-400 w-full hover:bg-gray-200 transition-all">
             Começar Publicação
           </button>
         </div>
@@ -45,11 +46,11 @@ export default function Principal() {
         </div>
       </section>
       <div className="flex items-center gap-2 m-2">
-        <div className="w-full max-w-[350px] h-[2px] bg-gray-200"></div>
+        <div className="w-full max-w-[300px] sm:max-w-[350px] h-[2px] bg-gray-200"></div>
         <div className="flex items-center gap-2 ">
           <span className="text-xs text-gray-600"> Classificar por:</span>
-          <span className="text-xs text-gray-600 flex gap items-center font-bold">
-            Populares <IoIosArrowDown />
+          <span className="text-xs text-gray-600 flex gap-1 items-center font-bold ">
+            Populares <IoMdArrowDropdown className="font-bold text-lg" />
           </span>
         </div>
       </div>

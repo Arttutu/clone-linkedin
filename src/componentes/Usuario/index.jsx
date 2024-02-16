@@ -37,7 +37,7 @@ export default function Usuario() {
   return (
     <>
       <aside className="flex  flex-col w-full  md:w-56">
-        <div className="bg-white  sm:rounded-t-lg sm:mt-6">
+        <div className="bg-white  sm:rounded-t-lg sm:mt-6 shadow-sm">
           <div className="relative">
             <div className="">
               <img
@@ -101,7 +101,7 @@ export default function Usuario() {
                 </span>
               </div>
             </div>
-            <div className="bg-white rounded-md  sm:mt-2 flex flex-col gap-4 ">
+            <div className="bg-white rounded-md  sm:mt-2 flex flex-col gap-4 shadow-sm ">
               <div className="flex flex-col gap-2   px-3 pt-3 group">
                 <div className="flex items-center gap-3 sm:justify-between group">
                   <h3 className="text-xs text-gray-600 font-semibold ">

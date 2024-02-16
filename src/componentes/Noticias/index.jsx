@@ -4,6 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import noticias from "./noticias.json";
 import logo from "../Usuario/logo_avatar.jpeg";
 import { FaLinkedin } from "react-icons/fa";
+import Footer from "../Rodape";
 export default function Noticias() {
   const [exibirMais, setExibirMais] = useState(true);
 
@@ -12,15 +13,15 @@ export default function Noticias() {
   }
 
   return (
-    <div className="flex flex-col">
-      <section className="w-[300px] rounded-lg bg-white mt-6 hidden lg:block">
+    <div className="flex flex-col gap-2">
+      <section className="w-[300px] rounded-lg bg-white mt-6 p-2 hidden shadow-sm lg:block">
         <div className="flex justify-between items-center p-2">
           <span className="font-semibold text-base text-gray-600">
             LinkedIn Notícias
           </span>
           <BsInfoSquareFill />
         </div>
-        <div className="flex items-center justify-center flex-col">
+        <div className="flex items-center justify-center flex-col ">
           <ul className="flex flex-col justify-center gap-2 list-disc  ">
             {noticias
               .filter((item) => exibirMais || item.id)
@@ -47,7 +48,7 @@ export default function Noticias() {
           </button>
         </div>
       </section>
-      <section className="w-[300px]  rounded-lg bg-white mt-6 hidden lg:block p-2">
+      <section className="w-[300px] shadow-sm  rounded-lg bg-white hidden lg:block p-2">
         <a className="flex flex-col gap-2 items-center justify-center p-4">
           <span className="text-gray-600 text-xs">
             Arthur, enjoy 50% off 2 months of LinkedIn
@@ -69,6 +70,7 @@ export default function Noticias() {
           </button>
         </a>
       </section>
+      <Footer />
     </div>
   );
 }

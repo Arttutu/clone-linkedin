@@ -3,6 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { CgLayoutGridSmall } from "react-icons/cg";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import IconeNav from "../IconeNav";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 export default function Cabecalho() {
   return (
@@ -18,12 +19,15 @@ export default function Cabecalho() {
       </div>
       <IconeNav />
       <div className="flex items-center  gap-1 sm:gap-8">
-        <div className="bg-gray-600 w-1 h-18"></div>
-        <div className="flex flex-col items-center">
-          <CgLayoutGridSmall className="text-4xl text-gray-600 cursor-pointer hover:text-black transition-all" />
-          <span className="text-gray-600 text-xs  hidden md:block">
-            Para negócios
-          </span>
+        <div className="bg-gray-600 w-1 h-full"></div>
+        <div className="flex flex-col items-center  ">
+          <CgLayoutGridSmall className="text-4xl text-gray-600 cursor-pointer hover:text-black transition-all hidden lg:block" />
+          <div className="flex items-center gap-1">
+            <span className="text-gray-600 text-xs hidden   md:block">
+              Para negócios
+            </span>
+            <IoMdArrowDropdown className="text-gray-600 text-lg" />
+          </div>
         </div>
         <h2 className="text-yellow-700 text-center underline text-xs hidden sm:block w-36">
           Reative Premium: 50% de desconto
