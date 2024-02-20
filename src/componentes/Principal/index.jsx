@@ -6,7 +6,8 @@ import { FaNewspaper } from "react-icons/fa6";
 import EventosModal from "../EventosModal";
 import * as Dialog from "@radix-ui/react-dialog";
 import { IoMdArrowDropdown } from "react-icons/io";
-
+import Card from "../Card";
+import publi from "./publicacao.json";
 export default function Principal() {
   return (
     <div className="flex flex-col w-full max-w-[544px] ">
@@ -77,7 +78,15 @@ export default function Principal() {
           </span>
         </div>
       </div>
-      <section className="bg-white sm:rounded-lg  p-2"></section>
+      {publi.map((item) => {
+        return (
+          <Card
+            nome={item.nome}
+            cargo={item.cargo}
+            descricao={item.descricao}
+          />
+        );
+      })}
     </div>
   );
 }
