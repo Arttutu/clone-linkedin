@@ -2,7 +2,7 @@ import React from "react";
 import { IoHomeSharp, IoPeople, IoBagRemoveSharp } from "react-icons/io5";
 import { AiFillMessage } from "react-icons/ai";
 import { FaBell } from "react-icons/fa6";
-import eu from "./logo_avatar.jpeg";
+import logo from "./logo_avatar.svg";
 export default function IconeNav() {
   return (
     <div className="flex items-center  gap-4 sm:gap-6">
@@ -32,7 +32,7 @@ export default function IconeNav() {
       </div>
       <div className="flex flex-col items-center">
         <img
-          src={eu}
+          src={logo}
           className=" rounded-full w-8 h-8 cursor-pointer hover:text-black transition-all"
         />
         <span className="text-gray-600 text-xs  hidden md:block">Eu</span>

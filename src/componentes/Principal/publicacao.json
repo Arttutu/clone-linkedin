@@ -1,28 +1,32 @@
 [
       {
         "nome": "João Silva",
-        "cargo": "Desenvolvedor | Back-End",
-        "foto_nome": "",
-        "descricao": "Excelente dia de trabalho hoje! #TrabalhoDuro #Produtividade",
-        "Banner": "",
-        "tempo_postagem": "2024-02-20T09:30:00Z"
+        "cargo": "Analista de Talent Acquisition",
+        "foto_autor": "./assets/img/avatar_dois.svg",
+        "descricao": "💼💡 Conectando Talentos à Vanguarda da Tecnologia: Oportunidades Além dos Limites! Cada busca por talentos é uma jornada única, uma oportunidade de descobrir o próximo grande líder. Vamos transformar desafios em oportunidades e inspirar a próxima geração de líderes e inovadores! #RecrutamentoTech #Inovação #Talentos",
+        "Banner": "./assets/img/linkedin.jpg",
+        "tempo_postagem": "2024-02-20T09:30:00Z",
+        "numero" : "1º"
       },
       {
         "nome": "Maria Oliveira",
         "cargo": "Desenvolvedor | Android",
-        "foto_autor": "",
-        "descricao": "Conferindo as novidades do mercado. #Networking #Business",
-        "Banner": "",
-        "tempo_postagem": "2024-02-20T11:45:00Z"
+        "foto_autor": "./assets/img/avatar_um.svg",
+  
+        "descricao": "📱💡 Explorando as Fronteiras do Android Development com Paixão e Inovação! Cada linha de código é uma oportunidade de transformar ideias em realidade. Vamos unir forças e elevar o padrão do desenvolvimento Android juntos! #AndroidDev #Inovação #Tecnologia",
+        "Banner": "./assets/img/android.jpg",
+        "tempo_postagem": "2024-02-20T11:45:00Z",
+        "numero" : "2º"
       },
       {
         "nome": "Pedro Santos",
-        "cargo": "Desenvolvedor | Front-End",
-        "foto_autor": "",
-        "descricao": "Ótima reunião com a equipe hoje. #Colaboração #EquipeTop",
-        "Banner": "",
-        "tempo_postagem": "2024-02-19T15:20:00Z"
+        "cargo": "Web developer : JAVA | JS | PHP | MYSQL | CSS | HTML |",
+        "foto_autor":"./assets/img/avatar_tres.svg" ,
+        "descricao":  "🌐 Navegando Pelas Ondas da Web Development: Criatividade, Código e Conexão! Cada projeto é uma oportunidade de criar experiências únicas. Vamos explorar novas tecnologias e construir o futuro da web com paixão e determinação. #WebDevelopment #Inovação #Tecnologia",
+        "Banner": "./assets/img/front_end.jpeg",
+        "tempo_postagem": "2024-02-19T15:20:00Z",
+        "numero" : "1º"
       }
-    ]
+]
   
   

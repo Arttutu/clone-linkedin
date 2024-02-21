@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BsInfoSquareFill } from "react-icons/bs";
 import { IoIosArrowDown } from "react-icons/io";
 import noticias from "./noticias.json";
-import logo from "../Usuario/logo_avatar.jpeg";
+import logo from "../Usuario/logo_avatar.svg";
 import { FaLinkedin } from "react-icons/fa";
 import { TbPointFilled } from "react-icons/tb";
 import * as Dialog from "@radix-ui/react-dialog";

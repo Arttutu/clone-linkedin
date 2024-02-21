@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaFlag, FaSquare } from "react-icons/fa";
 import { IoIosPeople, IoIosArrowDown } from "react-icons/io";
-import foto from "./logo_avatar.jpeg";
+import foto from "./logo_avatar.svg";
 import banner from "./banner.jpg";
 import EventosModal from "../EventosModal";
 
@@ -52,7 +52,7 @@ export default function Usuario() {
               alt="foto de perfil"
             />
             <h2 className="text-base  text-center  font-semibold  mt-14 sm:mt-10  p-2 hover:underline">
-              Arthur Gomes
+              Abigail Adams
             </h2>
             <p className="text-xs text-center pb-4 text-gray-600">
               Desenvolvedor | React | | JavaScript | Tailwind |

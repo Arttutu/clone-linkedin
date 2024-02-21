@@ -1,9 +1,8 @@
 import React from "react";
-import logo from "../Usuario/logo_avatar.jpeg";
+import logo from "../Usuario/logo_avatar.svg";
 import { FaCalendarDays } from "react-icons/fa6";
 import { GoFileMedia } from "react-icons/go";
 import { FaNewspaper } from "react-icons/fa6";
-import EventosModal from "../EventosModal";
 import * as Dialog from "@radix-ui/react-dialog";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Card from "../Card";
@@ -81,9 +80,13 @@ export default function Principal() {
       {publi.map((item) => {
         return (
           <Card
+            key={item.nome}
             nome={item.nome}
             cargo={item.cargo}
             descricao={item.descricao}
+            banner={item.Banner}
+            foto={item.foto_autor}
+            numero={item.numero}
           />
         );
       })}
