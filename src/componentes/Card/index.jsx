@@ -61,10 +61,10 @@ export default function Card({
         <div className="flex items-center justify-between p-2">
           <div className="flex items-center">
             <IoHeartCircleSharp className="text-red-400 text-sm" />
-            <span className="text-xs text-gray-600">
+            <span className="text-xs text-gray-600 hidden sm:block">
               Carrie Chapman Alicia Daisy e mais
-              <span className="text-xs text-gray-600 px-[2px]">500</span>
             </span>
+            <span className="text-xs text-gray-600 px-[2px]">500</span>
           </div>
           <div className="flex items-center gap-1">
             <span className="text-xs text-gray-600">85 Comentários</span>
@@ -77,14 +77,14 @@ export default function Card({
             className="text-gray-600 text-base flex items-center gap-2 hover:bg-gray-200 hover:p-[4px] hover:rounded-md transition-all"
           >
             <SlLike className=" text-base font-bold" />
-            Gostei
+            <span className="hidden sm:block">Gostei</span>
           </a>
           <button
             className="text-gray-600 text-base flex items-center  gap-2  hover:bg-gray-200 hover:p-[4px] hover:rounded-md transition-all"
             onClick={HandleComentar}
           >
             <MdOutlineComment className="text-base font-bold" />
-            Comentar
+            <span className="hidden sm:block">Comentar</span>
           </button>
 
           <a
@@ -92,14 +92,14 @@ export default function Card({
             className="text-gray-600 text-base flex items-center  gap-2 hover:bg-gray-200 hover:p-[4px] hover:rounded-md transition-all"
           >
             <IoGitCompareSharp className="text-base font-bold" />
-            Compartilhar
+            <span className="hidden sm:block"> Compartilhar</span>
           </a>
           <a
             href="#"
             className="text-gray-600 text-base flex items-center  gap-2 hover:bg-gray-200 hover:p-[4px] hover:rounded-md transition-all"
           >
             <IoIosSend className="text-base font-bold" />
-            Enviar
+            <span className="hidden sm:block">Enviar</span>
           </a>
         </div>
         {comentar ? (
