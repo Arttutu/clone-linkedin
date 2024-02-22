@@ -87,6 +87,7 @@ export default function Principal() {
             banner={item.Banner}
             foto={item.foto_autor}
             numero={item.numero}
+            tempo_postagem={item.tempo_postagem}
           />
         );
       })}

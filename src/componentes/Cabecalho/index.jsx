@@ -8,8 +8,8 @@ import { IoMdArrowDropdown } from "react-icons/io";
 
 export default function Cabecalho() {
   return (
-    <nav className="w-full h-full justify-evenly  max-w-6xl mx-auto flex items-center sm:items-center sm:justify-between p-2  ">
-      <div className="flex  justify-center items-center gap-8 sm:gap-2">
+    <nav className="w-full h-full justify-around  max-w-6xl mx-auto flex items-center sm:items-center sm:justify-between p-2  ">
+      <div className="flex  justify-center items-center sm:gap-2">
         <FaLinkedin className="w-[41px] h-[41px] text-blue-600" />
         <div className="md:bg-slate-100 pl-2 flex gap-2 items-center rounded-md">
           <FaMagnifyingGlass className="text-lg text-black lg:text-sm " />
