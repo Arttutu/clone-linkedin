@@ -6,7 +6,24 @@
         "descricao": "💼💡 Conectando Talentos à Vanguarda da Tecnologia: Oportunidades Além dos Limites! Cada busca por talentos é uma jornada única, uma oportunidade de descobrir o próximo grande líder. Vamos transformar desafios em oportunidades e inspirar a próxima geração de líderes e inovadores! #RecrutamentoTech #Inovação #Talentos",
         "Banner": "./assets/img/linkedin.jpg",
         "tempo_postagem": "11h",
-        "numero" : "1º"
+        "numero" : "1º",
+        "comentario":[
+          {
+            "foto": "./assets/img/mary.svg",
+            "nome": "",
+            "numero": "",
+            "cargo": "",
+            "comentario": "comentario 1"
+
+          },
+          {
+            "foto": "",
+            "nome": "",
+            "numero": "",
+            "cargo": "",
+            "comentario": "comentario 2"
+          }
+        ]
         
 
       },
@@ -18,7 +35,25 @@
         "descricao": "📱💡 Explorando as Fronteiras do Android Development com Paixão e Inovação! Cada linha de código é uma oportunidade de transformar ideias em realidade. Vamos unir forças e elevar o padrão do desenvolvimento Android juntos! #AndroidDev #Inovação #Tecnologia",
         "Banner": "./assets/img/android.jpg",
         "tempo_postagem": "2h",
-        "numero" : "2º"
+        "numero" : "2º",
+        "comentario":[
+          {
+            "foto": "",
+            "nome": "",
+            "numero": "",
+            "cargo": "",
+            "comentario": "comentario 3"
+
+          },
+          {
+            "foto": "",
+            "nome": "",
+            "numero": "",
+            "cargo": "",
+            "comentario": "comentario 4"
+          }
+        ]
+        
         
       },
       {
@@ -28,7 +63,25 @@
         "descricao":  "🌐 Navegando Pelas Ondas da Web Development: Criatividade, Código e Conexão! Cada projeto é uma oportunidade de criar experiências únicas. Vamos explorar novas tecnologias e construir o futuro da web com paixão e determinação. #WebDevelopment #Inovação #Tecnologia",
         "Banner": "./assets/img/front_end.jpeg",
         "tempo_postagem": "10 min",
-        "numero" : "1º"
+        "numero" : "1º",
+        "comentario":[
+          {
+            "foto": "",
+            "nome": "",
+            "numero": "",
+            "cargo": "",
+            "comentario": "comentario 5"
+
+          },
+          {
+            "foto": "",
+            "nome": "",
+            "numero": "",
+            "cargo": "",
+            "comentario": "comentario 6"
+          }
+        ]
+        
         
       }
 ]

@@ -7,6 +7,9 @@ import { IoGitCompareSharp, IoHeartCircleSharp } from "react-icons/io5";
 import logo from "../Usuario/logo_avatar.svg";
 import { IoIosSend } from "react-icons/io";
 import { RiEarthFill } from "react-icons/ri";
+import { FaRegSmile } from "react-icons/fa";
+import { GrGallery } from "react-icons/gr";
+import Comentario from "../Comentario";
 
 export default function Card({
   nome,
@@ -16,6 +19,7 @@ export default function Card({
   banner,
   numero,
   tempo_postagem,
+  comentario,
 }) {
   const [comentar, setComentar] = useState(false);
   function HandleComentar() {
@@ -103,20 +107,29 @@ export default function Card({
           </a>
         </div>
         {comentar ? (
-          <div>
+          <>
             <div className="flex items-center gap-2 p-4">
               <img
                 src={logo}
                 className="w-[48px] h-[48px] rounded-full"
                 alt="foto de perfil"
               ></img>
-              <input
-                type="text"
-                className="text-sm text-left text-gray-400 font-semibold rounded-3xl p-[12px] border border-gray-400 w-full hover:bg-gray-200 transition-all focus:outline-none"
-                placeholder="Adicionar Comentários"
-              />
+              <div className="rounded-3xl w-full flex justify-between px-4 items-center gap-2 border-gray-400  border">
+                <input
+                  type="text"
+                  className="text-sm  text-left text-gray-400 w-full rounded-3xl font-semibold border-none focus:outline-none  p-[12px] border"
+                  placeholder="Adicionar Comentários"
+                />
+                <div className="flex  gap-2 items-center">
+                  <FaRegSmile className="text-gray-600 w-6 h-6 cursor-pointer  hover:rounded-full hover:bg-gray-200 hover:transition-all hover:box-content hover:p-2 " />
+                  <GrGallery className="text-gray-600 w-6 h-6 cursor-pointer hover:rounded-full hover:bg-gray-200 hover:transition-all  hover:box-content hover:p-2  " />
+                </div>
+              </div>
             </div>
-          </div>
+            {comentario.map((item) => {
+              return <Comentario foto={item.foto} key={item.foto} />;
+            })}
+          </>
         ) : (
           ""
         )}

@@ -88,6 +88,7 @@ export default function Principal() {
             foto={item.foto_autor}
             numero={item.numero}
             tempo_postagem={item.tempo_postagem}
+            comentario={item.comentario}
           />
         );
       })}
