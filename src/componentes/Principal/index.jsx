@@ -35,13 +35,15 @@ export default function Principal() {
           <a href="">
             <button className="flex gap-2 items-center transition-all hover:bg-gray-200 p-4 rounded-md">
               <GoFileMedia className="text-xl text-blue-600" />
-              <span className="text-sm text-gray-500 font-semibold">Mídia</span>
+              <span className="text-xs  sm:text-sm  text-gray-500 font-semibold">
+                Mídia
+              </span>
             </button>
           </a>
           <a href="">
             <button className="flex gap-2 items-center transition-all hover:bg-gray-200 p-4 rounded-md">
               <FaCalendarDays className="text-xl text-orange-600" />
-              <span className="text-sm text-gray-500 font-semibold">
+              <span className="text-xs sm:text-sm text-gray-500 font-semibold">
                 Evento
               </span>
             </button>
@@ -49,18 +51,18 @@ export default function Principal() {
           <a href="https://www.linkedin.com/article/new/">
             <button className="flex gap-2 items-center transition-all hover:bg-gray-200 p-4 rounded-md ">
               <FaNewspaper className="text-xl  text-red-400" />
-              <span className="text-sm text-gray-500 font-semibold">
-                Escrever Artigo
+              <span className="text-xs sm:text-sm text-gray-500 font-semibold">
+                Escrever artigo
               </span>
             </button>
           </a>
         </div>
       </section>
       <div className="flex items-center gap-2 m-2">
-        <div className="w-full max-w-[300px] sm:max-w-[350px] h-[2px] bg-gray-200"></div>
+        <div className="w-full max-w-[280px] sm:max-w-[350px] h-[2px] bg-gray-200"></div>
         <div className="flex items-center gap-2 ">
-          <span className="text-xs text-gray-600"> Classificar por:</span>
-          <span className="text-xs text-gray-600 flex gap-1 items-center font-bold ">
+          <span className=" text-gray-600 text-[12px] ">Classificar por:</span>
+          <span className=" text-gray-600 flex gap-1 text-[12px]  items-center font-bold ">
             Populares
             <Dialog.Root>
               <Dialog.Trigger>
@@ -71,12 +73,12 @@ export default function Principal() {
                 <Dialog.Content className=" w-[150px] h-[80px] bg-white rounded-lg rounded-tr-none shadow-lg absolute left-[1050px] top-60">
                   <div className="flex flex-col  h-full justify-around">
                     <div className="hover:bg-gray-100 w-full h-[40px] border-l-green-600 border-l-2 flex items-center">
-                      <span className="text-gray-600 text-sm font-semibold w-full px-4  ">
+                      <span className="text-gray-600 text-xs sm:text-sm font-semibold w-full px-4  ">
                         Populares
                       </span>
                     </div>
                     <div className="hover:bg-gray-100 w-full h-[40px] flex items-center">
-                      <span className="text-gray-600 text-sm font-semibold w-full px-4 ">
+                      <span className="text-gray-600 text-xs sm:text-sm font-semibold w-full px-4 ">
                         Recentes
                       </span>
                     </div>
