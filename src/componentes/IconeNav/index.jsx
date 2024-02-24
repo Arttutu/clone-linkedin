@@ -30,7 +30,7 @@ export default function IconeNav() {
           Notificações
         </span>
       </div>
-      <div className="flex flex-col items-center">
+      <div className="hidden sm:flex sm:flex-col sm:items-center">
         <img
           src={logo}
           className=" rounded-full w-8 h-8 cursor-pointer hover:text-black transition-all"

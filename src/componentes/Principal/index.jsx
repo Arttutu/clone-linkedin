@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../Usuario/logo_avatar.svg";
 import { FaCalendarDays } from "react-icons/fa6";
 import { GoFileMedia } from "react-icons/go";
@@ -7,7 +7,17 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Card from "../Card";
 import publi from "./publicacao.json";
+import { v4 as uuidv4 } from "uuid";
 export default function Principal() {
+  const publiId = publi.map((item) => ({
+    id: uuidv4(),
+    ...item,
+  }));
+  const [cards, setCards] = useState(publiId);
+  function HandleRemove(id) {
+    setCards(cards.filter((card) => card.id !== id));
+  }
+
   return (
     <div className="flex flex-col w-full max-w-[544px] ">
       <section className="  bg-white sm:rounded-lg sm:mt-6 p-2 shadow-sm">
@@ -77,10 +87,13 @@ export default function Principal() {
           </span>
         </div>
       </div>
-      {publi.map((item) => {
+      {cards.map((item) => {
         return (
           <Card
-            key={item.nome}
+            key={item.id}
+            id={item.id}
+            deletar={HandleRemove}
+            json={publi}
             nome={item.nome}
             cargo={item.cargo}
             descricao={item.descricao}

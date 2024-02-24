@@ -10,6 +10,7 @@ import { RiEarthFill } from "react-icons/ri";
 import { FaRegSmile } from "react-icons/fa";
 import { GrGallery } from "react-icons/gr";
 import Comentario from "../Comentario";
+import publi from "../Principal/publicacao.json";
 
 export default function Card({
   nome,
@@ -20,11 +21,15 @@ export default function Card({
   numero,
   tempo_postagem,
   comentario,
+  deletar,
+  id,
 }) {
   const [comentar, setComentar] = useState(false);
+
   function HandleComentar() {
     setComentar(!comentar);
   }
+
   return (
     <section className="bg-white sm:rounded-lg mb-6 relative ">
       <div className="">
@@ -34,7 +39,9 @@ export default function Card({
             <TbPointFilled className="text-[8px] text-gray-600" />
             <TbPointFilled className="text-[8px] text-gray-600" />
           </div>
-          <IoMdClose className="text-[16px] text-gray-600 font-semibold hover:bg-gray-200  hover:rounded-full  hover:p-[4px] transition-all" />
+          <button onClick={() => deletar(id)}>
+            <IoMdClose className="text-[16px] text-gray-600 font-semibold hover:bg-gray-200  hover:rounded-full  hover:p-[4px] transition-all" />
+          </button>
         </div>
         <div className=" flex items-start gap-2 p-4">
           <img src={foto} alt="Imagem do Autor" className="w-[48px] h-[48px]" />
@@ -114,7 +121,7 @@ export default function Card({
                 className="w-[48px] h-[48px] rounded-full"
                 alt="foto de perfil"
               ></img>
-              <div className="rounded-3xl w-full flex justify-between px-4 items-center gap-2 border-gray-400  border">
+              <div className="rounded-3xl w-full flex justify-between pl-2 pr-4 items-center gap-2 border-gray-400  border">
                 <input
                   type="text"
                   className="text-sm  text-left text-gray-400 w-full rounded-3xl font-semibold border-none focus:outline-none  p-[12px] border"
@@ -127,7 +134,16 @@ export default function Card({
               </div>
             </div>
             {comentario.map((item) => {
-              return <Comentario foto={item.foto} key={item.foto} />;
+              return (
+                <Comentario
+                  foto={item.foto}
+                  nome={item.nome}
+                  descricao={item.comentario}
+                  numero={item.numero}
+                  cargo={item.cargo}
+                  key={item.foto}
+                />
+              );
             })}
           </>
         ) : (

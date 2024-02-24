@@ -52,7 +52,7 @@ export default function Usuario() {
               alt="foto de perfil"
             />
             <h2 className="text-base  text-center  font-semibold  mt-14 sm:mt-10  p-2 hover:underline">
-              Abigail Adams
+              Ana Clara
             </h2>
             <p className="text-xs text-center pb-4 text-gray-600">
               Desenvolvedor | React | | JavaScript | Tailwind |

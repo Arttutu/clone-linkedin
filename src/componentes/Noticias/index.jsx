@@ -74,13 +74,11 @@ export default function Noticias() {
       <section className="w-[300px] shadow-sm  rounded-lg bg-white hidden lg:block p-2">
         <div className="flex gap-2 items-center justify-end">
           <span className="text-xs">Anúcio</span>
-          <a>
-            <div className="flex items-center cursor-pointer ">
-              <TbPointFilled className="text-[6px]" />
-              <TbPointFilled className="text-[6px]" />
-              <TbPointFilled className="text-[6px]" />
-            </div>
-          </a>
+          <div className="flex items-center cursor-pointer ">
+            <TbPointFilled className="text-[6px]" />
+            <TbPointFilled className="text-[6px]" />
+            <TbPointFilled className="text-[6px]" />
+          </div>
         </div>
 
         <a className="flex flex-col gap-2 items-center justify-center p-4">
@@ -88,16 +86,14 @@ export default function Noticias() {
             Arthur, enjoy 50% off 2 months of LinkedIn
           </span>
           <span className="text-gray-600 text-xs">Premium!</span>
-          <a href="">
-            <div className="flex gap-2 py-4">
-              <img
-                src={logo}
-                className="w-[72px] h-[72px] rounded-full"
-                alt="linkedin premium"
-              ></img>
-              <FaLinkedin className="w-[76px] h-[76px]  text-yellow-700/50" />
-            </div>
-          </a>
+          <div className="flex gap-2 py-4">
+            <img
+              src={logo}
+              className="w-[72px] h-[72px] rounded-full"
+              alt="linkedin premium"
+            ></img>
+            <FaLinkedin className="w-[76px] h-[76px]  text-yellow-700/50" />
+          </div>
 
           <span className="text-gray-600 text-sm text-center">
             Ivest in your future with this exclusive offer

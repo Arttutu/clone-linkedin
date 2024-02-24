@@ -10,18 +10,18 @@
         "comentario":[
           {
             "foto": "./assets/img/mary.svg",
-            "nome": "",
-            "numero": "",
-            "cargo": "",
-            "comentario": "comentario 1"
+            "nome": "Mary",
+            "numero": "1",
+            "cargo": "Tech Recruit",
+            "comentario": "Meus parabéns"
 
           },
           {
-            "foto": "",
-            "nome": "",
-            "numero": "",
-            "cargo": "",
-            "comentario": "comentario 2"
+            "foto": "./assets/img/rosa.svg",
+            "nome": "Rosa",
+            "numero": "2",
+            "cargo": "Desenvolvedor | Android",
+            "comentario": "Gostei muito da publicação"
           }
         ]
         
@@ -38,25 +38,26 @@
         "numero" : "2º",
         "comentario":[
           {
-            "foto": "",
-            "nome": "",
-            "numero": "",
-            "cargo": "",
-            "comentario": "comentario 3"
+            "foto": "./assets/img/felisia.svg",
+            "nome": "felicia",
+            "numero": "1",
+            "cargo": "Scrumm master",
+            "comentario": "Nice"
 
           },
           {
-            "foto": "",
-            "nome": "",
-            "numero": "",
-            "cargo": "",
-            "comentario": "comentario 4"
+            "foto": "./assets/img/zora.svg",
+            "nome": "zora",
+            "numero": "1",
+            "cargo": "Desenvolvedor | Back-end",
+            "comentario": "Muito Bom"
           }
         ]
         
         
       },
       {
+        
         "nome": "Pedro Santos",
         "cargo": "Web developer : JAVA | JS | PHP | MYSQL | CSS | HTML |",
         "foto_autor":"./assets/img/avatar_tres.svg" ,
@@ -66,24 +67,25 @@
         "numero" : "1º",
         "comentario":[
           {
-            "foto": "",
-            "nome": "",
-            "numero": "",
-            "cargo": "",
-            "comentario": "comentario 5"
+            "foto": "./assets/img/lucy.svg",
+            "nome": "Lucy",
+            "numero": "2",
+            "cargo": "Estágiario TI",
+            "comentario": "Gostei"
 
           },
           {
-            "foto": "",
-            "nome": "",
-            "numero": "",
-            "cargo": "",
-            "comentario": "comentario 6"
+            "foto": "./assets/img/amelia.svg",
+            "nome": "Amelia",
+            "numero": "1",
+            "cargo": "CEO",
+            "comentario": "Continue assim"
           }
         ]
         
         
       }
-]
+    ]
+
   
   
