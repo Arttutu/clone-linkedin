@@ -3,7 +3,6 @@ import { FaCameraRetro } from "react-icons/fa";
 import * as Checkbox from "@radix-ui/react-checkbox";
 import { FaCheck } from "react-icons/fa6";
 import Fuso from "./fusohorario.json";
-import { IoIosArrowDown } from "react-icons/io";
 import CheckBox from "../CheckBoxEvento";
 export default function Formulario() {
   const [tamanhoEvento, setTamanhoEvento] = useState("");
@@ -35,7 +34,12 @@ export default function Formulario() {
             <CheckBox tipo="Presencial" />
           </div>
           <div>
-            <label className="text-sm text-gray-600">Nome do Evento*</label>
+            <label
+              aria-label="nome do evento"
+              className="text-sm text-gray-600"
+            >
+              Nome do Evento*
+            </label>
             <input
               className="rounded-md w-full border border-black p-1 hover:border-2 text-xs text-gray-600"
               maxLength="75"
@@ -47,7 +51,12 @@ export default function Formulario() {
             </span>
           </div>
           <div className="flex flex-col">
-            <label className="text-sm text-gray-600">Fuso horário*</label>
+            <label
+              aria-label="selecionar o fuso horário local"
+              className="text-sm text-gray-600"
+            >
+              Fuso horário*
+            </label>
             <select
               name="horas"
               id="hrs"
@@ -68,14 +77,24 @@ export default function Formulario() {
           </div>
           <div className="flex flex-1 gap-4">
             <div>
-              <label className="text-sm text-gray-600">Data de início*</label>
+              <label
+                aria-label="data de inicio do evento"
+                className="text-sm text-gray-600"
+              >
+                Data de início*
+              </label>
               <input
                 className="rounded-md w-full border border-black p-1 hover:border-2"
                 type="date"
               ></input>
             </div>
             <div>
-              <label className="text-sm text-gray-600">Hora de início </label>
+              <label
+                aria-label="hora de inicio do evento"
+                className="text-sm text-gray-600"
+              >
+                Hora de início{" "}
+              </label>
               <input
                 className="rounded-md w-full border border-black p-1 hover:border-2"
                 type="time"
@@ -92,26 +111,43 @@ export default function Formulario() {
                 <FaCheck className=" size-6 rounded-md   w-full bg-green-700" />
               </Checkbox.Indicator>
             </Checkbox.Root>
-            <label htmlFor="c1" className="text-sm text-gray-600">
+            <label
+              aria-label="adicionando data de termino do evento"
+              htmlFor="c1"
+              className="text-sm text-gray-600"
+            >
               Adicionar data e hora de término
             </label>
           </div>
           <div>
-            <label className="text-sm text-gray-600">Endereço*</label>
+            <label
+              className="text-sm text-gray-600"
+              aria-label="adicionar o endereço do evento"
+            >
+              Endereço*
+            </label>
             <input
               className="rounded-md w-full border border-black p-1 hover:border-2 text-gray-600 text-sm"
               placeholder="Ex.: rua, cidade, código postal, etc."
             ></input>
           </div>
           <div>
-            <label className="text-sm text-gray-600">Local</label>
+            <label
+              aria-label="local do evento"
+              className="text-sm text-gray-600"
+            >
+              Local
+            </label>
             <input
               className="rounded-md w-full border border-black p-1 hover:border-2 text-gray-600 text-sm"
               placeholder="Por ex.: andar, número da sala, etc."
             ></input>
           </div>
           <div>
-            <label className="text-sm text-gray-600">
+            <label
+              aria-label="link do evento externo"
+              className="text-sm text-gray-600"
+            >
               Link de evento externo
             </label>
             <input
@@ -125,7 +161,12 @@ export default function Formulario() {
             </span>
           </div>
           <div className="flex flex-col">
-            <label className="text-sm text-gray-600">Descrição</label>
+            <label
+              aria-label="aqui vai a descrição do evento"
+              className="text-sm text-gray-600"
+            >
+              Descrição
+            </label>
             <textarea
               placeholder="Ex.:tópicos, agenda, etc."
               maxLength="5000"
@@ -137,7 +178,9 @@ export default function Formulario() {
             </span>
           </div>
           <div>
-            <label className="text-sm text-gray-600">Palestrantes</label>
+            <label arial-label="palestrantes" className="text-sm text-gray-600">
+              Palestrantes
+            </label>
             <input className="rounded-md w-full border border-black p-1 hover:border-2"></input>
           </div>
           <span className="text-xs text-gray-600 leading-6">

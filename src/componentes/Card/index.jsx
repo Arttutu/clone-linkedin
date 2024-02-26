@@ -23,11 +23,11 @@ export default function Card({
   deletar,
   id,
 }) {
-  const [comentarios, setComentarios] = useState(false);
-  const [comentar, setComentar] = useState();
+  const [listaComentario, setListaComentarios] = useState(comentario);
+  const [ShowComentarios, setShowComentarios] = useState(false);
   const [like, setLike] = useState(false);
   const [quantindadeLike, setQuantindadeLike] = useState(10);
-
+  const [comentar, setComentar] = useState("");
   function HandleLike() {
     setLike(!like);
     if (like) {
@@ -37,10 +37,26 @@ export default function Card({
     }
   }
   function HandleComentarios() {
-    setComentarios(!comentarios);
+    setShowComentarios(!ShowComentarios);
   }
   const HandleComentar = (event) => {
-    setComentar(event.target.value);
+    var comentar = event.target.value;
+    setComentar(comentar);
+  };
+  const HandleSubmit = (event) => {
+    event.preventDefault();
+    if (comentar.trim() !== "") {
+      const novoComentario = {
+        foto: logo,
+        nome: "Ana Clara",
+        comentario: comentar,
+        numero: "1",
+        cargo:
+          "Desenvolvedor | React | | JavaScript | Tailwind | Styled-Componetes | Figma | Github",
+      };
+      setListaComentarios([...comentario, novoComentario]);
+      setComentar("");
+    }
   };
   return (
     <section className="bg-white sm:rounded-lg mb-6 relative ">
@@ -141,7 +157,7 @@ export default function Card({
             <span className="hidden sm:block">Enviar</span>
           </a>
         </div>
-        {comentarios ? (
+        {ShowComentarios ? (
           <>
             <div className="flex items-satart gap-2 p-4">
               <img
@@ -151,7 +167,7 @@ export default function Card({
               ></img>
               <form
                 className="flex w-full flex-col justify-start gap-2"
-                onSubmit=""
+                onSubmit={HandleSubmit}
               >
                 <div className="rounded-3xl w-full flex justify-between pl-2 pr-4 items-center gap-2 border-gray-400  border">
                   <input
@@ -166,12 +182,19 @@ export default function Card({
                     <GrGallery className="text-gray-600 w-6 h-6 cursor-pointer hover:rounded-full hover:bg-gray-200 hover:transition-all  hover:box-content hover:p-2  " />
                   </div>
                 </div>
-                <button className="rounded-2xl max-w-[80px] p-1 text-sm bg-blue-600 text-white font-semibold">
-                  Publicar
-                </button>
+                {comentar.length > 0 ? (
+                  <button
+                    type="submit"
+                    className="rounded-2xl max-w-[80px] p-1 text-sm bg-blue-600 text-white font-semibold"
+                  >
+                    Publicar
+                  </button>
+                ) : (
+                  ""
+                )}
               </form>
             </div>
-            {comentario.map((item) => {
+            {listaComentario.map((item) => {
               return (
                 <Comentario
                   foto={item.foto}
