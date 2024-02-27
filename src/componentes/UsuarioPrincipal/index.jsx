@@ -13,7 +13,7 @@ export default function UsuarioPrincipal() {
           />
         </div>
         <img
-          className="w-[72px] h-[72px] rounded-full z-10 mx-auto absolute  -translate-x-1/2 left-1/2 top-8 "
+          className="w-[72px] h-[72px] rounded-full z-5 mx-auto absolute  -translate-x-1/2 left-1/2 top-8 "
           src={foto}
           alt="foto de perfil"
         />
