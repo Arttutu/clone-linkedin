@@ -1,10 +1,11 @@
 import React from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
+
 export default function Footer() {
   return (
-    <div className="w-[300px] rounded-lg mt-2  hidden lg:block ">
-      <div className=" flex flex-col gap-2 items-center justify-center">
+    <div className="w-[300px] rounded-lg mt-2 lg:block">
+      <div className="flex flex-col gap-2 items-center justify-center">
         <div className="flex gap-2">
           <span className="text-gray-600 text-xs hover:text-blue-600 hover:underline transition-all">
             Sobre
@@ -24,7 +25,7 @@ export default function Footer() {
         </div>
         <div className="flex gap-2">
           <span className="text-gray-600 text-xs hover:text-blue-600 hover:underline transition-all">
-            Preferências de anúcios
+            Preferências de anúncios
           </span>
           <span className="text-gray-600 text-xs hover:text-blue-600 hover:underline transition-all">
             Publicidade

@@ -3,6 +3,7 @@ import logo from "../Usuario/logo_avatar.svg";
 import { FaCalendarDays } from "react-icons/fa6";
 import { GoFileMedia } from "react-icons/go";
 import { FaNewspaper } from "react-icons/fa6";
+import EventosModal from "../EventosModal";
 export default function PublicacaoPrincipal() {
   return (
     <section className="  bg-white sm:rounded-lg sm:mt-6 p-2 shadow-sm">
@@ -25,14 +26,10 @@ export default function PublicacaoPrincipal() {
             </span>
           </button>
         </a>
-        <a href="">
-          <button className="flex gap-2 items-center transition-all hover:bg-gray-200 p-4 rounded-md">
-            <FaCalendarDays className="text-xl text-orange-600" />
-            <span className="text-xs sm:text-sm text-gray-500 font-semibold">
-              Evento
-            </span>
-          </button>
-        </a>
+        <div className="flex gap-2 items-center transition-all hover:bg-gray-200 p-4 rounded-md">
+          <FaCalendarDays className="text-xl text-orange-600" />
+          <EventosModal publicacao />
+        </div>
         <a href="https://www.linkedin.com/article/new/">
           <button className="flex gap-2 items-center transition-all hover:bg-gray-200 p-4 rounded-md ">
             <FaNewspaper className="text-xl  text-red-400" />

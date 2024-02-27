@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-
 import * as Dialog from "@radix-ui/react-dialog";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Card from "../Card";
 import publi from "./publicacao.json";
 import { v4 as uuidv4 } from "uuid";
 import PublicacaoPrincipal from "../PublicacaoPrincipal";
+
 export default function Principal() {
   const publiId = publi.map((item) => ({
     id: uuidv4(),
