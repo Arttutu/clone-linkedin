@@ -8,6 +8,11 @@ export default function Formulario() {
   const [tamanhoEvento, setTamanhoEvento] = useState("");
   const [tamanhoLink, setTamanhoLink] = useState("");
   const [tamanhoDescricao, setTamanhoDescricao] = useState("");
+  const [termino, setTermino] = useState(false);
+
+  const HandleTermino = () => {
+    setTermino(!termino);
+  };
   function handleTamanhoEvento(event) {
     setTamanhoEvento(event.target.value);
   }
@@ -93,7 +98,7 @@ export default function Formulario() {
                 aria-label="hora de inicio do evento"
                 className="text-sm text-gray-600"
               >
-                Hora de início{" "}
+                Hora de início
               </label>
               <input
                 className="rounded-md w-full border border-black p-1 hover:border-2"
@@ -104,8 +109,8 @@ export default function Formulario() {
           <div className="flex items-center gap-2">
             <Checkbox.Root
               className="flex items-center justify-center border-black border rounded-md w-6 h-6 hover:border-2 appearance-none "
-              defaultChecked
               id="c1"
+              onClick={HandleTermino}
             >
               <Checkbox.Indicator className="text-white">
                 <FaCheck className=" size-6 rounded-md   w-full bg-green-700" />
@@ -119,6 +124,37 @@ export default function Formulario() {
               Adicionar data e hora de término
             </label>
           </div>
+          {termino ? (
+            <div className="flex flex-1 gap-4">
+              <div>
+                <label
+                  aria-label="data de termino"
+                  className="text-sm text-gray-600"
+                >
+                  Data de termino
+                </label>
+                <input
+                  type="date"
+                  className="rounded-md w-full border border-black p-1 hover:border-2"
+                ></input>
+              </div>
+              <div>
+                <label
+                  aria-label="hora de termino"
+                  className="text-sm text-gray-600"
+                >
+                  Hora de termino
+                </label>
+                <input
+                  type="time"
+                  className="rounded-md w-full border border-black p-1 hover:border-2"
+                ></input>
+              </div>
+            </div>
+          ) : (
+            ""
+          )}
+
           <div>
             <label
               className="text-sm text-gray-600"

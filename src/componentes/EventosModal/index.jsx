@@ -19,8 +19,8 @@ export default function EventosModal({ publicacao }) {
       )}
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 bg-black/50" />
-        <div className="fixed inset-0 flex items-center justify-center z-50">
-          <Dialog.Content className="max-w-[540px] bg-white rounded-lg">
+        <div className="mt-10 sm:mt-0 fixed inset-0 flex items-center justify-center z-50">
+          <Dialog.Content className=" w-full max-w-[350px] sm:max-w-[540px] bg-white rounded-lg">
             <div className="flex justify-between items-center px-3 py-6">
               <h3 className="text-xl font-semibold text-gray-600">
                 Criar evento

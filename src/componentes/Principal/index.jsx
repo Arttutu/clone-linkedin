@@ -20,9 +20,9 @@ export default function Principal() {
   return (
     <div className="flex flex-col w-full max-w-[544px] ">
       <PublicacaoPrincipal />
-      <div className="flex items-center gap-2 m-2">
-        <div className="w-full max-w-[280px] sm:max-w-[350px] h-[2px] bg-gray-200"></div>
-        <div className="flex items-center gap-2 ">
+      <div className="flex items-center justify-around m-2">
+        <div className="w-full max-w-[190px] sm:max-w-[350px] h-[2px] bg-gray-200"></div>
+        <div className="flex items-center  gap-2 ">
           <span className=" text-gray-600 text-[12px] ">Classificar por:</span>
           <span className=" text-gray-600 flex gap-1 text-[12px]  items-center font-bold ">
             Populares
