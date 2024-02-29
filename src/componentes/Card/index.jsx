@@ -4,12 +4,12 @@ import { TbPointFilled } from "react-icons/tb";
 import { MdOutlineComment } from "react-icons/md";
 import { IoGitCompareSharp, IoHeartCircleSharp } from "react-icons/io5";
 import logo from "../Usuario/logo_avatar.svg";
-import { IoIosSend } from "react-icons/io";
 import { RiEarthFill } from "react-icons/ri";
 import { FaRegSmile } from "react-icons/fa";
 import { GrGallery } from "react-icons/gr";
 import Comentario from "../Comentario";
 import HoverLike from "../HoverLike";
+import EnviarModal from "../EnviarModal";
 
 export default function Card({
   nome,
@@ -129,13 +129,7 @@ export default function Card({
           <IoGitCompareSharp className="text-base font-bold" />
           <span className="hidden sm:block"> Compartilhar</span>
         </a>
-        <a
-          href="#"
-          className="text-gray-600 text-base flex items-center  gap-2 hover:bg-gray-200 hover:p-[4px] hover:rounded-md transition-all"
-        >
-          <IoIosSend className="text-base font-bold" />
-          <span className="hidden sm:block">Enviar</span>
-        </a>
+        <EnviarModal nome={nome} />
       </div>
       {ShowComentarios ? (
         <>
