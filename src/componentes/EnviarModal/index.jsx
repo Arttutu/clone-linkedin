@@ -1,6 +1,7 @@
 import React from "react";
 import { IoIosSend, IoMdClose } from "react-icons/io";
 import * as Dialog from "@radix-ui/react-dialog";
+import EnviarLista from "../EnviarLista/enviarLista";
 
 export default function EnviarModal({ nome }) {
   return (
@@ -18,13 +19,30 @@ export default function EnviarModal({ nome }) {
         <Dialog.Overlay className="fixed inset-0 bg-black/50" />
         <div className="mt-10 sm:mt-0 fixed inset-0 flex items-center justify-center z-50">
           <Dialog.Content className=" w-full max-w-[350px] sm:max-w-[540px] bg-white rounded-lg">
-            <div className="flex justify-between items-center px-3 py-6">
+            <div className="flex justify-between items-center px-4 py-6">
               <h3 className="text-xl font-semibold text-gray-600">
                 Enviar publicação de {nome}
               </h3>
               <Dialog.Close>
                 <IoMdClose className="text-gray-600 text-2xl" />
               </Dialog.Close>
+            </div>
+            <div className="p-4">
+              <input
+                placeholder="Digitar nome"
+                className="w-full border-[2px] border-black rounded-md focus:outline-none placeholder:px-4"
+              />
+              <EnviarLista />
+              <EnviarLista />
+              <EnviarLista />
+              <EnviarLista />
+              <EnviarLista />
+              <EnviarLista />
+              <EnviarLista />
+              <EnviarLista />
+              <EnviarLista />
+              <EnviarLista />
+              <EnviarLista />
             </div>
           </Dialog.Content>
         </div>
