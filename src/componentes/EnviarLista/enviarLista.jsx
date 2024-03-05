@@ -1,8 +1,7 @@
-import React from "react";
-import img from "./amelia.svg";
-export default function EnviarLista({ nome, cargo, foto }) {
+import React, { useState } from "react";
+export default function EnviarLista({ nome, cargo, foto, HandleMarcado }) {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col mt-2 gap-2">
       <div className="flex items-center justify-between mt-2">
         <div className="flex items-center gap-2 ">
           <img src={foto} className="w-[48px] h-[48px] rounded-full"></img>
@@ -13,7 +12,7 @@ export default function EnviarLista({ nome, cargo, foto }) {
             </div>
           </div>
         </div>
-        <input type="checkbox"></input>
+        <input type="checkbox" onClick={HandleMarcado}></input>
       </div>
       <div className="border-[0.5px] w-full text-gray-600"></div>
     </div>

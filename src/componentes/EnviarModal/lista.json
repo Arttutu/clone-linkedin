@@ -1,14 +1,14 @@
 [
-          {"nome": "João Silva",
-        "cargo": "Analista de Talent Acquisition",
-        "foto_autor": "./assets/img/avatar_dois.svg"},
-    {      "nome": "João Silva",
-        "cargo": "Analista de Talent Acquisition",
-        "foto_autor": "./assets/img/avatar_dois.svg"},
-    {      "nome": "João Silva",
-        "cargo": "Analista de Talent Acquisition",
-        "foto_autor": "./assets/img/avatar_dois.svg"},
-    {      "nome": "João Silva",
-        "cargo": "Analista de Talent Acquisition",
-        "foto_autor": "./assets/img/avatar_dois.svg"}
+          {"nome": "Mary",
+        "cargo": "Tech Recruit",
+        "foto_autor": "./assets/img/mary.svg"},
+    {      "nome": "Rosa",
+        "cargo": "Desenvolvedor | Android",
+        "foto_autor": "./assets/img/rosa.svg"},
+    {      "nome": "Lucy",
+        "cargo": "Estágiario TI",
+        "foto_autor": "./assets/img/lucy.svg"},
+    {      "nome": "Zora",
+        "cargo": "Desenvolvedor | Back-end",
+        "foto_autor": "./assets/img/zora.svg"}
 ]

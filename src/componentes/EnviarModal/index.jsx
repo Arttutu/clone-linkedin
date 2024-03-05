@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoIosSend, IoMdClose } from "react-icons/io";
 import * as Dialog from "@radix-ui/react-dialog";
 import EnviarLista from "../EnviarLista/enviarLista";
 import Lista from "./lista.json";
 export default function EnviarModal({ nome }) {
+  const [marcado, setMarcado] = useState(false);
+  const HandleMarcado = () => {
+    setMarcado(!marcado);
+  };
   return (
     <Dialog.Root>
       <Dialog.Trigger>
@@ -38,10 +42,29 @@ export default function EnviarModal({ nome }) {
                     nome={item.nome}
                     cargo={item.cargo}
                     foto={item.foto_autor}
+                    HandleMarcado={HandleMarcado}
                   />
                 );
               })}
             </div>
+            {marcado ? (
+              <div className="bg-gray-200 rounded-md px-4 py-1">
+                <div>
+                  <input
+                    className="bg-gray-200 focus:outline-none w-full h-16 placeholder:flex placeholder:items-start"
+                    placeholder="Escrava sua mensagem"
+                  />
+                </div>
+                <div>
+                  <img></img>
+                  <span className="text-sm text-gray-600">
+                    Publicação de {nome}
+                  </span>
+                </div>
+              </div>
+            ) : (
+              ""
+            )}
           </Dialog.Content>
         </div>
       </Dialog.Portal>
