@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-export default function EnviarLista({ nome, cargo, foto, HandleMarcado }) {
+export default function EnviarLista({
+  index,
+  nome,
+  cargo,
+  foto,
+  HandleMarcado,
+}) {
   return (
     <div className="flex flex-col mt-2 gap-2">
       <div className="flex items-center justify-between mt-2">
@@ -12,7 +18,7 @@ export default function EnviarLista({ nome, cargo, foto, HandleMarcado }) {
             </div>
           </div>
         </div>
-        <input type="checkbox" onClick={HandleMarcado}></input>
+        <input type="checkbox" onClick={() => HandleMarcado(index)}></input>
       </div>
       <div className="border-[0.5px] w-full text-gray-600"></div>
     </div>

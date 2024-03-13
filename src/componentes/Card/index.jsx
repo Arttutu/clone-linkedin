@@ -136,8 +136,9 @@ export default function Card({
           <div className="flex items-satart gap-2 p-4">
             <img
               src={logo}
-              className="w-[48px] h-[48px] rounded-full"
               alt="foto de perfil"
+              className="w-[48px] h-[48px]"
+              z
             ></img>
             <form
               className="flex w-full flex-col justify-start gap-2"

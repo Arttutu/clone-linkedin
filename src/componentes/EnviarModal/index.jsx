@@ -3,10 +3,11 @@ import { IoIosSend, IoMdClose } from "react-icons/io";
 import * as Dialog from "@radix-ui/react-dialog";
 import EnviarLista from "../EnviarLista/enviarLista";
 import Lista from "./lista.json";
+import { v4 as uuidv4 } from "uuid";
 export default function EnviarModal({ nome }) {
-  const [marcado, setMarcado] = useState(false);
-  const HandleMarcado = () => {
-    setMarcado(!marcado);
+  const [marcado, setMarcado] = useState(-1);
+  const HandleMarcado = (index) => {
+    setMarcado(index === marcado ? -1 : index);
   };
   return (
     <Dialog.Root>
@@ -39,6 +40,7 @@ export default function EnviarModal({ nome }) {
               {Lista.map((item) => {
                 return (
                   <EnviarLista
+                    key={uuidv4()}
                     nome={item.nome}
                     cargo={item.cargo}
                     foto={item.foto_autor}
