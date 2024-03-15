@@ -4,6 +4,8 @@ import { IoMdClose, IoIosArrowDown } from "react-icons/io";
 import { FaCalendarDays } from "react-icons/fa6";
 import { GoFileMedia } from "react-icons/go";
 import { FaNewspaper } from "react-icons/fa6";
+import { MdStickyNote2 } from "react-icons/md";
+import { TbPointFilled } from "react-icons/tb";
 import EventosModal from "../EventosModal";
 import foto from "../IconeNav/logo_avatar.svg";
 import * as Dialog from "@radix-ui/react-dialog";
@@ -25,8 +27,8 @@ export default function PublicacaoPrincipal() {
           </Dialog.Trigger>
           <Dialog.Portal>
             <Dialog.Overlay className="fixed inset-0 bg-black/50 flex justify-center items-center">
-              <Dialog.Content className="  h-[500px] w-[350px] sm:w-[744px] p-4 bg-white rounded-lg">
-                <div className="flex justify-between items-center mt-2 ">
+              <Dialog.Content className="  h-[500px] w-[350px] sm:w-[744px]  bg-white rounded-lg">
+                <div className="flex justify-between items-center mt-2 p-4 ">
                   <div className=" flex gap-2 items-center">
                     <img src={foto} className="w-[56px] h-[56px]" />
                     <div className="flex flex-col">
@@ -45,8 +47,25 @@ export default function PublicacaoPrincipal() {
                 </div>
                 <input
                   placeholder="Sobre o que você quer falar ?"
-                  className="placeholder:text-xl placeholder:text-gray-600 w-full mt-6 focus:outline-none text-lg text-gray-600 flex-wrap"
+                  className="p-4 placeholder:text-xl placeholder:text-gray-600 w-full mt-6 focus:outline-none text-lg text-gray-600 flex-wrap"
                 ></input>
+                <div className=" flex items-center gap-2 p-4">
+                  <div className="p-2 bg-gray-100  rounded-full w-[48px] h-[48px] flex items-center justify-center">
+                    <GoFileMedia className="" />
+                  </div>
+                  <div className="p-2 bg-gray-100  rounded-full w-[48px] h-[48px] flex items-center justify-center">
+                    <FaCalendarDays className="" />
+                  </div>
+                  <div className=" p-2 bg-gray-100  rounded-full w-[48px] h-[48px] flex items-center justify-center">
+                    <MdStickyNote2 className="" />
+                  </div>
+                  <div className="p-2 bg-gray-100  rounded-full w-[48px] h-[48px] flex items-center justify-center">
+                    <TbPointFilled className="w-[12px] h-[12px]" />
+                    <TbPointFilled className="w-[12px] h-[12px]" />
+                    <TbPointFilled className="w-[12px] h-[12px]" />
+                  </div>
+                </div>
+                <div className="w-full h-[64px] border-t-2 border-gray-200"></div>
               </Dialog.Content>
             </Dialog.Overlay>
           </Dialog.Portal>
