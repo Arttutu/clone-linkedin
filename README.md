@@ -13,6 +13,9 @@ O projeto é um desafio pessoal que propus a mim mesmo: construir a página prin
 
 
 ## Screenshots
+![App Screenshot](https://github.com/Arttutu/clone-linkedin/blob/main/linkedin.png?raw=true)
+![App Screenshot](https://github.com/Arttutu/clone-linkedin/blob/main/linkedin2.png?raw=true)
+![App Screenshot](https://github.com/Arttutu/clone-linkedin/blob/main/linkedin3.png?raw=true)
+![App Screenshot](https://github.com/Arttutu/clone-linkedin/blob/main/linkedin4.png?raw=true)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
