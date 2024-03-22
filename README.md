@@ -4,7 +4,7 @@
 O projeto é um desafio pessoal que propus a mim mesmo: construir a página principal do LinkedIn com todas as suas funções, modais e estilo.
 
 ## Deploy
--[site](https://clone-linkedin-two.vercel.app/)
+- [site](https://clone-linkedin-two.vercel.app/)
 
 ## Referência
 
